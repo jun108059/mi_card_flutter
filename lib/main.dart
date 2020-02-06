@@ -38,53 +38,41 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.phone_android,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+82 10 6432 6752',
+                    style: TextStyle(
                       color: Colors.teal.shade900,
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20.0,
                     ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '+82 10 6432 6752',
-                      style: TextStyle(
-                        color: Colors.teal.shade900,
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
-              Container(
-                  padding: EdgeInsets.all(10.0),
+              Card(
                   color: Colors.white,
                   margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
-                        Icons.mail_outline,
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      'youngjun108059@gmail.com',
+                      style: TextStyle(
+                        fontSize: 20.0,
                         color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro'
                       ),
-                      SizedBox(
-                        width: 10.0,
-                      ),
-                      Text(
-                          'youngjun108059@gamil.com',
-                          style: TextStyle(
-                            color: Colors.teal.shade900,
-                            fontFamily: 'Source Sans Pro',
-                            fontSize: 20.0,
-                          ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  )
               ),
             ],
           )
@@ -93,4 +81,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
